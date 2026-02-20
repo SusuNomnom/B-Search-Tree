@@ -1,0 +1,1 @@
+#ifndef BST_H\n#define BST_H\n\ntypedef struct Node {\n    int data;\n    struct Node* left;\n    struct Node* right;\n} Node;\n\nNode* createNode(int data);\nvoid insert(Node** root, int data);\nNode* search(Node* root, int data);\nvoid inorderTraversal(Node* root);\nvoid deleteTree(Node* root);\n\n#endif // BST_H
